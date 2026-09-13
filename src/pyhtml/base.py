@@ -68,23 +68,34 @@ def _render_attrs(attrs: Mapping[str, object]) -> str:
     return "".join(parts)
 
 
-def iter_node(node: Node) -> Iterator[str]:
+type _Leaf = BaseElement | HasHtml | str | int
+
+
+def _iter_leaves(node: Node) -> Iterator[_Leaf]:
+    """Flatten nested iterables, dropping None and bools and rejecting bytes-like values."""
     match node:
         case None | bool():
             return
-        case BaseElement():
-            yield from node.iter_chunks()
-        case HasHtml():
-            yield node.__html__()
-        case str():
-            yield html.escape(node, quote=False)
-        case int():
-            yield str(node)
+        case BaseElement() | HasHtml() | str() | int():
+            yield node
         case bytes() | bytearray() | memoryview():
             raise TypeError(f"{node!r} is not a valid child node")
         case _:
             for child in node:
-                yield from iter_node(child)
+                yield from _iter_leaves(child)
+
+
+def iter_node(node: Node) -> Iterator[str]:
+    for leaf in _iter_leaves(node):
+        match leaf:
+            case BaseElement():
+                yield from leaf.iter_chunks()
+            case HasHtml():
+                yield leaf.__html__()
+            case str():
+                yield html.escape(leaf, quote=False)
+            case int():
+                yield str(leaf)
 
 
 def render(node: Node) -> str:
@@ -97,10 +108,12 @@ class BaseElement:
     tag: ClassVar[str]
 
     def __init__(
-        self, attrs: Mapping[str, object] | None = None, children: Node = None
+        self,
+        attrs: Mapping[str, object] | None = None,
+        children: tuple[_Leaf, ...] = (),
     ) -> None:
         self._attrs: dict[str, object] = dict(attrs or {})
-        self._children: Node = children
+        self._children: tuple[_Leaf, ...] = children
 
     def _with_attrs(
         self, attrs: Mapping[str, AttrValue] | None, kwargs: Mapping[str, object]
@@ -129,7 +142,8 @@ class Element(BaseElement):
     __slots__ = ()
 
     def __getitem__(self, children: Node) -> Self:
-        return type(self)(self._attrs, children)
+        # Materialize now so one-shot iterators are not consumed by the first render.
+        return type(self)(self._attrs, tuple(_iter_leaves(children)))
 
     def iter_chunks(self) -> Iterator[str]:
         yield from super().iter_chunks()

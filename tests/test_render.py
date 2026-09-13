@@ -43,6 +43,21 @@ def test_children_forms() -> None:
     )
 
 
+def test_iterator_children_render_repeatedly() -> None:
+    node = ul[(li[item] for item in ["a", "b"]), [(li[c] for c in "xy")]]
+    expected = "<ul><li>a</li><li>b</li><li>x</li><li>y</li></ul>"
+    assert str(node) == expected
+    assert str(node) == expected
+    assert str(node(id="list")) == expected.replace("<ul>", '<ul id="list">')
+
+
+def test_children_are_captured_when_building() -> None:
+    items = ["a"]
+    node = ul[items]
+    items.append("b")
+    assert str(node) == "<ul>a</ul>"
+
+
 def test_markup_is_not_escaped() -> None:
     assert render([raw("<hr>"), "<hr>"]) == "<hr>&lt;hr&gt;"
 
@@ -56,6 +71,10 @@ def test_escape_hatch_attributes() -> None:
         div({"on click": "x"})
 
 
-def test_rejects_bytes_child() -> None:
+def test_rejects_bytes_child_when_building() -> None:
     with pytest.raises(TypeError, match="not a valid child"):
-        render(div[b"x"])
+        _ = div[b"x"]
+    with pytest.raises(TypeError, match="not a valid child"):
+        _ = div[["ok", bytearray(b"x")]]
+    with pytest.raises(TypeError, match="not a valid child"):
+        render(memoryview(b"x"))
