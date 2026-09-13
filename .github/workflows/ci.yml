@@ -23,7 +23,8 @@ jobs:
           persist-credentials: false
 
       # python-version is left unset so uv picks it up from .python-version.
-      - uses: astral-sh/setup-uv@v10
+      # setup-uv publishes no floating major tags, so pin the full version.
+      - uses: astral-sh/setup-uv@v10.1.0
         with:
           enable-cache: true
           cache-python: true
@@ -63,4 +64,5 @@ jobs:
           persist-credentials: false
 
       # Runs `prek run --show-diff-on-failure --all-files`.
-      - uses: j178/prek-action@v3
+      # prek-action publishes no floating major tags, so pin the full version.
+      - uses: j178/prek-action@v3.0.0
