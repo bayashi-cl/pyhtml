@@ -62,3 +62,27 @@ a(href="http://[bad")  # URL syntax is not checked
 a(href="/x", target="_top-frame")  # names starting with "_" must be one of the keywords
 a(download="x")  # download, target, rel, ... must be omitted when href is absent
 _: object = div[b"x"]  # bytes is an Iterable[int]; rejected when the element is built
+div(title="\x01")  # no controls other than ASCII whitespace, and no noncharacters
+div(id="main menu")  # IDs must be non-empty and contain no ASCII whitespace
+button(name="")  # the name of a form control must not be empty
+button(command="open", commandfor="m")  # custom command keywords must start with "--"
+a(href="/", rel="sidebar")  # rel keywords must be allowed link types
+a(href="/", ping="/beacon")  # ping URLs must be absolute URLs with an HTTP(S) scheme
+
+# Rules that involve other attributes or elements. tests/test_vnu.py satisfies each
+# of these before validating, so add a rule there when adding a gap here.
+button(type="button", formaction="/submit")  # form* attributes require type="submit"
+button(form="f", popovertarget="t")  # ID references must resolve to suitable elements
+img(alt="")  # src or srcset is required
+img(src="/a.png")  # alt is required, except under certain conditions
+img(src="/a.png", alt="", controls=True)  # controls requires a non-empty alt
+img(src="/a.png", alt="", sizes="100vw")  # sizes requires srcset with width descriptors
+img(srcset="/a.png 640w", alt="")  # width descriptors require sizes
+img(src="/a.png", alt="", ismap=True)  # ismap requires an ancestor a element with href
+img(src="/a", alt="", ismap=True, usemap="#m")  # usemap is not allowed inside that a
+img(src="/a.png", alt="", usemap="#nav")  # usemap must name a map element
+div(itemtype="https://example.com/Thing")  # itemtype and itemref require itemscope
+div(itemscope=True, itemid="https://example.com/1")  # itemid also requires itemtype
+div(itemprop="name")  # itemprop requires an item to belong to
+a(itemprop="url")  # itemprop on a requires href
+li(value=1)  # value is only allowed when the parent is ol

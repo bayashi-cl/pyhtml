@@ -6,6 +6,9 @@ dist/
 wheels/
 *.egg-info
 
+# Hypothesis example database
+.hypothesis/
+
 # Virtual environments
 .venv
 
