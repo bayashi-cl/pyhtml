@@ -1,0 +1,49 @@
+# Maps the "Value" column of the WHATWG attribute index to Python types.
+#
+# Lookup order for each attribute:
+#   1. [overrides.<element or "*">.<attribute>] (must state a reason)
+#   2. closed keyword lists ("a"; "b"; the empty string) become Literal[...]
+#   3. [values] below, keyed by the normalized Value text
+# Anything else stops generation, so every new value syntax needs a decision here.
+#
+# Trailing comments note what the Python type does NOT check.
+
+[values]
+"Boolean attribute" = "bool"
+"Text" = "str"
+"CSS declarations" = "str"  # CSS syntax
+"Event handler content attribute" = "str"  # JavaScript syntax
+"ID" = "str"  # the referenced ID exists
+"Valid URL potentially surrounded by spaces" = "str"  # URL syntax
+"Valid non-empty URL potentially surrounded by spaces" = "str"  # URL syntax, non-empty
+"Valid navigable target name or keyword" = "str"  # names must not start with "_" unless a keyword
+"Valid BCP 47 language tag" = "str"  # BCP 47 syntax
+"Valid BCP 47 language tag or the empty string" = "str"  # BCP 47 syntax
+"Valid MIME type string" = "str"  # MIME type syntax
+"Valid hash-name reference" = "str"  # "#name" syntax
+"Valid custom element name of a defined customized built-in element" = "str"  # name syntax
+"Valid source size list" = "str"  # source size syntax
+"Comma-separated list of image candidate strings" = "str"  # srcset syntax
+"Valid integer" = "int"  # bool is accepted because bool is a subclass of int
+"Valid non-negative integer" = "int"  # sign
+"Valid non-negative integer between 0 and 8" = "int"  # range
+"Set of space-separated tokens" = "str | Sequence[str]"  # tokens containing spaces
+"Set of space-separated tokens consisting of valid non-empty URLs" = "str | Sequence[str]"  # URL syntax
+"Unordered set of unique space-separated tokens" = "str | Sequence[str]"  # uniqueness, allowed keywords
+"Unordered set of unique space-separated tokens consisting of IDs" = "str | Sequence[str]"  # uniqueness, referenced IDs exist
+"Unordered set of unique space-separated tokens consisting of valid absolute URLs" = "str | Sequence[str]"  # uniqueness, URL syntax
+"Unordered set of unique space-separated tokens consisting of valid absolute URLs, defined property names, or text" = "str | Sequence[str]"  # uniqueness
+"Ordered set of unique space-separated tokens, none of which are identical to another, each consisting of one code point in length" = "str | Sequence[str]"  # uniqueness, token length
+"Referrer policy" = "ReferrerPolicy"
+
+[aliases]
+# https://w3c.github.io/webappsec-referrer-policy/#enumdef-referrerpolicy
+ReferrerPolicy = 'Literal["", "no-referrer", "no-referrer-when-downgrade", "same-origin", "origin", "strict-origin", "origin-when-cross-origin", "strict-origin-when-cross-origin", "unsafe-url"]'
+
+[overrides.button.command]
+type = "str"
+reason = "The keyword list ends with 'a custom command keyword' (names starting with --), so the set is open."
+
+[overrides."*".hidden]
+type = 'bool | Literal["until-found", "hidden"]'
+reason = "A missing hidden attribute means 'not hidden', so False omitting the attribute matches the expected meaning (unlike spellcheck or translate, where omission means 'inherit')."

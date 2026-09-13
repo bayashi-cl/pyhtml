@@ -1,0 +1,4261 @@
+{
+  "snapshot": {
+    "last_updated": "8 September 2026",
+    "pages": [
+      {
+        "url": "https://html.spec.whatwg.org/multipage/indices.html",
+        "sha256": "104c2ee6ba47cc3b45501ebe7af7998e0f02bbeb8634512b4586531412bc361a"
+      },
+      {
+        "url": "https://html.spec.whatwg.org/multipage/syntax.html",
+        "sha256": "cf9966dec3b24a00263a7548f75cf33c3183da4ca279f28c222973953d586db2"
+      },
+      {
+        "url": "https://html.spec.whatwg.org/multipage/dom.html",
+        "sha256": "0a7ad6752eb5b26f4985829cd33ebee68244f3f71a240b1bf44da14b38433fcb"
+      }
+    ]
+  },
+  "elements": [
+    {
+      "name": "a",
+      "description": "Hyperlink",
+      "children": "transparent*",
+      "attributes": [
+        "href",
+        "target",
+        "download",
+        "ping",
+        "rel",
+        "hreflang",
+        "type",
+        "referrerpolicy"
+      ],
+      "globals": true
+    },
+    {
+      "name": "abbr",
+      "description": "Abbreviation",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "address",
+      "description": "Contact information for a page or article element",
+      "children": "flow*",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "area",
+      "description": "Hyperlink or dead area on an image map",
+      "children": "empty",
+      "attributes": [
+        "alt",
+        "coords",
+        "shape",
+        "href",
+        "target",
+        "download",
+        "ping",
+        "rel",
+        "referrerpolicy"
+      ],
+      "globals": true
+    },
+    {
+      "name": "article",
+      "description": "Self-contained syndicatable or reusable composition",
+      "children": "flow",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "aside",
+      "description": "Sidebar for tangentially related content",
+      "children": "flow",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "audio",
+      "description": "Audio player",
+      "children": "source*; track*; transparent*",
+      "attributes": [
+        "src",
+        "crossorigin",
+        "preload",
+        "autoplay",
+        "loading",
+        "loop",
+        "muted",
+        "controls"
+      ],
+      "globals": true
+    },
+    {
+      "name": "b",
+      "description": "Keywords",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "base",
+      "description": "Base URL and default target navigable for hyperlinks and forms",
+      "children": "empty",
+      "attributes": [
+        "href",
+        "target"
+      ],
+      "globals": true
+    },
+    {
+      "name": "bdi",
+      "description": "Text directionality isolation",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "bdo",
+      "description": "Text directionality formatting",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "blockquote",
+      "description": "A section quoted from another source",
+      "children": "flow",
+      "attributes": [
+        "cite"
+      ],
+      "globals": true
+    },
+    {
+      "name": "body",
+      "description": "Document body",
+      "children": "flow",
+      "attributes": [
+        "onafterprint",
+        "onbeforeprint",
+        "onbeforeunload",
+        "onhashchange",
+        "onlanguagechange",
+        "onmessage",
+        "onmessageerror",
+        "onoffline",
+        "ononline",
+        "onpageswap",
+        "onpagehide",
+        "onpagereveal",
+        "onpageshow",
+        "onpopstate",
+        "onrejectionhandled",
+        "onstorage",
+        "onunhandledrejection",
+        "onunload"
+      ],
+      "globals": true
+    },
+    {
+      "name": "br",
+      "description": "Line break, e.g. in poem or postal address",
+      "children": "empty",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "button",
+      "description": "Button control",
+      "children": "phrasing*",
+      "attributes": [
+        "command",
+        "commandfor",
+        "disabled",
+        "form",
+        "formaction",
+        "formenctype",
+        "formmethod",
+        "formnovalidate",
+        "formtarget",
+        "name",
+        "popovertarget",
+        "popovertargetaction",
+        "type",
+        "value"
+      ],
+      "globals": true
+    },
+    {
+      "name": "canvas",
+      "description": "Scriptable bitmap canvas",
+      "children": "transparent",
+      "attributes": [
+        "width",
+        "height"
+      ],
+      "globals": true
+    },
+    {
+      "name": "caption",
+      "description": "Table caption",
+      "children": "flow*",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "cite",
+      "description": "Title of a work",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "code",
+      "description": "Computer code",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "col",
+      "description": "Table column",
+      "children": "empty",
+      "attributes": [
+        "span"
+      ],
+      "globals": true
+    },
+    {
+      "name": "colgroup",
+      "description": "Group of columns in a table",
+      "children": "col*; template*",
+      "attributes": [
+        "span"
+      ],
+      "globals": true
+    },
+    {
+      "name": "data",
+      "description": "Machine-readable equivalent",
+      "children": "phrasing",
+      "attributes": [
+        "value"
+      ],
+      "globals": true
+    },
+    {
+      "name": "datalist",
+      "description": "Container for options for combo box control",
+      "children": "phrasing*; option*; script-supporting elements*",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "dd",
+      "description": "Content for corresponding dt element(s)",
+      "children": "flow",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "del",
+      "description": "A removal from the document",
+      "children": "transparent",
+      "attributes": [
+        "cite",
+        "datetime"
+      ],
+      "globals": true
+    },
+    {
+      "name": "details",
+      "description": "Disclosure control for hiding details",
+      "children": "summary*; flow",
+      "attributes": [
+        "name",
+        "open"
+      ],
+      "globals": true
+    },
+    {
+      "name": "dfn",
+      "description": "Defining instance",
+      "children": "phrasing*",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "dialog",
+      "description": "Dialog box or window",
+      "children": "flow",
+      "attributes": [
+        "open"
+      ],
+      "globals": true
+    },
+    {
+      "name": "div",
+      "description": "Generic flow container, or container for name-value groups in dl elements",
+      "children": "flow*",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "dl",
+      "description": "Association list consisting of zero or more name-value groups",
+      "children": "dt*; dd*; div*; script-supporting elements",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "dt",
+      "description": "Legend for corresponding dd element(s)",
+      "children": "flow*",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "em",
+      "description": "Stress emphasis",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "embed",
+      "description": "Plugin",
+      "children": "empty",
+      "attributes": [
+        "src",
+        "type",
+        "width",
+        "height",
+        "any"
+      ],
+      "globals": true
+    },
+    {
+      "name": "fieldset",
+      "description": "Group of form controls",
+      "children": "legend*; flow",
+      "attributes": [
+        "disabled",
+        "form",
+        "name"
+      ],
+      "globals": true
+    },
+    {
+      "name": "figcaption",
+      "description": "Caption for figure",
+      "children": "flow",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "figure",
+      "description": "Figure with optional caption",
+      "children": "figcaption*; flow",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "footer",
+      "description": "Footer for a page or section",
+      "children": "flow*",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "form",
+      "description": "User-submittable form",
+      "children": "flow*",
+      "attributes": [
+        "accept-charset",
+        "action",
+        "autocomplete",
+        "enctype",
+        "method",
+        "name",
+        "novalidate",
+        "rel",
+        "target"
+      ],
+      "globals": true
+    },
+    {
+      "name": "h1",
+      "description": "Heading",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "h2",
+      "description": "Heading",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "h3",
+      "description": "Heading",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "h4",
+      "description": "Heading",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "h5",
+      "description": "Heading",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "h6",
+      "description": "Heading",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "head",
+      "description": "Container for document metadata",
+      "children": "metadata content*",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "header",
+      "description": "Introductory or navigational aids for a page or section",
+      "children": "flow*",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "hgroup",
+      "description": "Heading container",
+      "children": "h1; h2; h3; h4; h5; h6; p; script-supporting elements",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "hr",
+      "description": "Thematic break",
+      "children": "empty",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "html",
+      "description": "Root element",
+      "children": "head*; body*",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "i",
+      "description": "Alternate voice",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "iframe",
+      "description": "Child navigable",
+      "children": "empty",
+      "attributes": [
+        "src",
+        "srcdoc",
+        "name",
+        "sandbox",
+        "allow",
+        "allowfullscreen",
+        "width",
+        "height",
+        "referrerpolicy",
+        "loading"
+      ],
+      "globals": true
+    },
+    {
+      "name": "img",
+      "description": "Image",
+      "children": "empty",
+      "attributes": [
+        "alt",
+        "src",
+        "srcset",
+        "sizes",
+        "crossorigin",
+        "usemap",
+        "ismap",
+        "controls",
+        "width",
+        "height",
+        "referrerpolicy",
+        "decoding",
+        "loading",
+        "fetchpriority"
+      ],
+      "globals": true
+    },
+    {
+      "name": "input",
+      "description": "Form control",
+      "children": "empty",
+      "attributes": [
+        "accept",
+        "alpha",
+        "alt",
+        "autocomplete",
+        "checked",
+        "colorspace",
+        "dirname",
+        "disabled",
+        "form",
+        "formaction",
+        "formenctype",
+        "formmethod",
+        "formnovalidate",
+        "formtarget",
+        "height",
+        "list",
+        "max",
+        "maxlength",
+        "min",
+        "minlength",
+        "multiple",
+        "name",
+        "pattern",
+        "placeholder",
+        "popovertarget",
+        "popovertargetaction",
+        "readonly",
+        "required",
+        "size",
+        "src",
+        "step",
+        "type",
+        "value",
+        "width"
+      ],
+      "globals": true
+    },
+    {
+      "name": "ins",
+      "description": "An addition to the document",
+      "children": "transparent",
+      "attributes": [
+        "cite",
+        "datetime"
+      ],
+      "globals": true
+    },
+    {
+      "name": "kbd",
+      "description": "User input",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "label",
+      "description": "Caption for a form control",
+      "children": "phrasing*",
+      "attributes": [
+        "for"
+      ],
+      "globals": true
+    },
+    {
+      "name": "legend",
+      "description": "Caption for fieldset",
+      "children": "phrasing*; heading content",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "li",
+      "description": "List item",
+      "children": "flow",
+      "attributes": [
+        "value"
+      ],
+      "globals": true
+    },
+    {
+      "name": "link",
+      "description": "Link metadata",
+      "children": "empty",
+      "attributes": [
+        "href",
+        "crossorigin",
+        "rel",
+        "as",
+        "media",
+        "hreflang",
+        "type",
+        "sizes",
+        "imagesrcset",
+        "imagesizes",
+        "referrerpolicy",
+        "integrity",
+        "blocking",
+        "color",
+        "disabled",
+        "fetchpriority"
+      ],
+      "globals": true
+    },
+    {
+      "name": "main",
+      "description": "Container for the dominant contents of the document",
+      "children": "flow",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "map",
+      "description": "Image map",
+      "children": "transparent; area*",
+      "attributes": [
+        "name"
+      ],
+      "globals": true
+    },
+    {
+      "name": "mark",
+      "description": "Highlight",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "menu",
+      "description": "Menu of commands",
+      "children": "li; script-supporting elements",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "meta",
+      "description": "Text metadata",
+      "children": "empty",
+      "attributes": [
+        "name",
+        "http-equiv",
+        "content",
+        "charset",
+        "media"
+      ],
+      "globals": true
+    },
+    {
+      "name": "meter",
+      "description": "Gauge",
+      "children": "phrasing*",
+      "attributes": [
+        "value",
+        "min",
+        "max",
+        "low",
+        "high",
+        "optimum"
+      ],
+      "globals": true
+    },
+    {
+      "name": "nav",
+      "description": "Section with navigational links",
+      "children": "flow",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "noscript",
+      "description": "Fallback content for script",
+      "children": "varies*",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "object",
+      "description": "Image, child navigable, or plugin",
+      "children": "transparent",
+      "attributes": [
+        "data",
+        "type",
+        "name",
+        "form",
+        "width",
+        "height"
+      ],
+      "globals": true
+    },
+    {
+      "name": "ol",
+      "description": "Ordered list",
+      "children": "li; script-supporting elements",
+      "attributes": [
+        "reversed",
+        "start",
+        "type"
+      ],
+      "globals": true
+    },
+    {
+      "name": "optgroup",
+      "description": "Group of options in a list box",
+      "children": "option*; script-supporting elements*; noscript*; div*; legend*",
+      "attributes": [
+        "disabled",
+        "label"
+      ],
+      "globals": true
+    },
+    {
+      "name": "option",
+      "description": "Option in a list box or combo box control",
+      "children": "text*; div*; phrasing*",
+      "attributes": [
+        "disabled",
+        "label",
+        "selected",
+        "value"
+      ],
+      "globals": true
+    },
+    {
+      "name": "output",
+      "description": "Calculated output value",
+      "children": "phrasing",
+      "attributes": [
+        "for",
+        "form",
+        "name"
+      ],
+      "globals": true
+    },
+    {
+      "name": "p",
+      "description": "Paragraph",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "picture",
+      "description": "Image",
+      "children": "source*; one img; script-supporting elements",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "pre",
+      "description": "Block of preformatted text",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "progress",
+      "description": "Progress bar",
+      "children": "phrasing*",
+      "attributes": [
+        "value",
+        "max"
+      ],
+      "globals": true
+    },
+    {
+      "name": "q",
+      "description": "Quotation",
+      "children": "phrasing",
+      "attributes": [
+        "cite"
+      ],
+      "globals": true
+    },
+    {
+      "name": "rp",
+      "description": "Parenthesis for ruby annotation text",
+      "children": "text",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "rt",
+      "description": "Ruby annotation text",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "ruby",
+      "description": "Ruby annotation(s)",
+      "children": "phrasing; rt; rp*",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "s",
+      "description": "Inaccurate text",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "samp",
+      "description": "Computer output",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "script",
+      "description": "Embedded script",
+      "children": "script, data, or script documentation*",
+      "attributes": [
+        "src",
+        "type",
+        "nomodule",
+        "async",
+        "defer",
+        "crossorigin",
+        "integrity",
+        "referrerpolicy",
+        "blocking",
+        "fetchpriority"
+      ],
+      "globals": true
+    },
+    {
+      "name": "search",
+      "description": "Container for search controls",
+      "children": "flow",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "section",
+      "description": "Generic document or application section",
+      "children": "flow",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "select",
+      "description": "List box control",
+      "children": "option*; optgroup*; hr*; script-supporting elements*; noscript*; div*; button*",
+      "attributes": [
+        "autocomplete",
+        "disabled",
+        "form",
+        "multiple",
+        "name",
+        "required",
+        "size"
+      ],
+      "globals": true
+    },
+    {
+      "name": "selectedcontent",
+      "description": "Mirrors content from an option",
+      "children": "empty",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "slot",
+      "description": "Shadow tree slot",
+      "children": "transparent",
+      "attributes": [
+        "name"
+      ],
+      "globals": true
+    },
+    {
+      "name": "small",
+      "description": "Side comment",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "source",
+      "description": "Image source for img or media source for video or audio",
+      "children": "empty",
+      "attributes": [
+        "type",
+        "media",
+        "src",
+        "srcset",
+        "sizes",
+        "width",
+        "height"
+      ],
+      "globals": true
+    },
+    {
+      "name": "span",
+      "description": "Generic phrasing container",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "strong",
+      "description": "Importance",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "style",
+      "description": "Embedded styling information",
+      "children": "text*",
+      "attributes": [
+        "media",
+        "blocking"
+      ],
+      "globals": true
+    },
+    {
+      "name": "sub",
+      "description": "Subscript",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "summary",
+      "description": "Caption for details",
+      "children": "phrasing; heading content",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "sup",
+      "description": "Superscript",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "table",
+      "description": "Table",
+      "children": "caption*; colgroup*; thead*; tbody*; tfoot*; tr*; script-supporting elements",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "tbody",
+      "description": "Group of rows in a table",
+      "children": "tr; script-supporting elements",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "td",
+      "description": "Table cell",
+      "children": "flow",
+      "attributes": [
+        "colspan",
+        "rowspan",
+        "headers"
+      ],
+      "globals": true
+    },
+    {
+      "name": "template",
+      "description": "Template",
+      "children": "empty",
+      "attributes": [
+        "for",
+        "shadowrootmode",
+        "shadowrootdelegatesfocus",
+        "shadowrootserializable",
+        "shadowrootslotassignment",
+        "shadowrootclonable",
+        "shadowrootcustomelementregistry"
+      ],
+      "globals": true
+    },
+    {
+      "name": "textarea",
+      "description": "Multiline text controls",
+      "children": "text",
+      "attributes": [
+        "autocomplete",
+        "cols",
+        "dirname",
+        "disabled",
+        "form",
+        "maxlength",
+        "minlength",
+        "name",
+        "placeholder",
+        "readonly",
+        "required",
+        "rows",
+        "wrap"
+      ],
+      "globals": true
+    },
+    {
+      "name": "tfoot",
+      "description": "Group of footer rows in a table",
+      "children": "tr; script-supporting elements",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "th",
+      "description": "Table header cell",
+      "children": "flow*",
+      "attributes": [
+        "colspan",
+        "rowspan",
+        "headers",
+        "scope",
+        "abbr"
+      ],
+      "globals": true
+    },
+    {
+      "name": "thead",
+      "description": "Group of heading rows in a table",
+      "children": "tr; script-supporting elements",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "time",
+      "description": "Machine-readable equivalent of date- or time-related data",
+      "children": "phrasing",
+      "attributes": [
+        "datetime"
+      ],
+      "globals": true
+    },
+    {
+      "name": "title",
+      "description": "Document title",
+      "children": "text*",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "tr",
+      "description": "Table row",
+      "children": "th*; td; script-supporting elements",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "track",
+      "description": "Timed text track",
+      "children": "empty",
+      "attributes": [
+        "default",
+        "kind",
+        "label",
+        "src",
+        "srclang"
+      ],
+      "globals": true
+    },
+    {
+      "name": "u",
+      "description": "Unarticulated annotation",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "ul",
+      "description": "List",
+      "children": "li; script-supporting elements",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "var",
+      "description": "Variable",
+      "children": "phrasing",
+      "attributes": [],
+      "globals": true
+    },
+    {
+      "name": "video",
+      "description": "Video player",
+      "children": "source*; track*; transparent*",
+      "attributes": [
+        "src",
+        "crossorigin",
+        "poster",
+        "preload",
+        "autoplay",
+        "playsinline",
+        "loading",
+        "loop",
+        "muted",
+        "controls",
+        "width",
+        "height"
+      ],
+      "globals": true
+    },
+    {
+      "name": "wbr",
+      "description": "Line breaking opportunity",
+      "children": "empty",
+      "attributes": [],
+      "globals": true
+    }
+  ],
+  "void_elements": [
+    "area",
+    "base",
+    "br",
+    "col",
+    "embed",
+    "hr",
+    "img",
+    "input",
+    "link",
+    "meta",
+    "source",
+    "track",
+    "wbr"
+  ],
+  "global_attributes": [
+    "accesskey",
+    "autocapitalize",
+    "autocorrect",
+    "autofocus",
+    "contenteditable",
+    "dir",
+    "draggable",
+    "enterkeyhint",
+    "headingoffset",
+    "headingreset",
+    "hidden",
+    "inert",
+    "inputmode",
+    "is",
+    "itemid",
+    "itemprop",
+    "itemref",
+    "itemscope",
+    "itemtype",
+    "lang",
+    "nonce",
+    "popover",
+    "spellcheck",
+    "style",
+    "tabindex",
+    "title",
+    "translate",
+    "writingsuggestions",
+    "class",
+    "id",
+    "slot"
+  ],
+  "attributes": [
+    {
+      "name": "abbr",
+      "elements": [
+        "th"
+      ],
+      "conditions": {},
+      "description": "Alternative label to use for the header cell when referencing the cell in other contexts",
+      "value": "Text",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "accept",
+      "elements": [
+        "input"
+      ],
+      "conditions": {},
+      "description": "Hint for expected file type in file upload controls",
+      "value": "Set of comma-separated tokens* consisting of valid MIME type strings with no parameters or audio/*, video/*, or image/",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "accept-charset",
+      "elements": [
+        "form"
+      ],
+      "conditions": {},
+      "description": "Character encodings to use for form submission",
+      "value": "ASCII case-insensitive match for \"UTF-8\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "accesskey",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Keyboard shortcut to activate or focus element",
+      "value": "Ordered set of unique space-separated tokens, none of which are identical to another, each consisting of one code point in length",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "action",
+      "elements": [
+        "form"
+      ],
+      "conditions": {},
+      "description": "URL to use for form submission",
+      "value": "Valid non-empty URL potentially surrounded by spaces",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "allow",
+      "elements": [
+        "iframe"
+      ],
+      "conditions": {},
+      "description": "Permissions policy to be applied to the iframe's contents",
+      "value": "Serialized permissions policy",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "allowfullscreen",
+      "elements": [
+        "iframe"
+      ],
+      "conditions": {},
+      "description": "Whether to allow the iframe's contents to use requestFullscreen()",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "alpha",
+      "elements": [
+        "input"
+      ],
+      "conditions": {},
+      "description": "Allow the color's alpha component to be set",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "alt",
+      "elements": [
+        "area",
+        "img",
+        "input"
+      ],
+      "conditions": {},
+      "description": "Replacement text for use when images are not available",
+      "value": "Text",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "as",
+      "elements": [
+        "link"
+      ],
+      "conditions": {},
+      "description": "Destination for a preload request (for rel=\"preload\" and rel=\"modulepreload\")",
+      "value": "Preload destination, for rel=\"preload\"; module preload destination, for rel=\"modulepreload\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "async",
+      "elements": [
+        "script"
+      ],
+      "conditions": {},
+      "description": "Execute script when available, without blocking while fetching",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "autocapitalize",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Recommended autocapitalization behavior (for supported input methods)",
+      "value": "\"on\"; \"off\"; \"none\"; \"sentences\"; \"words\"; \"characters\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "autocomplete",
+      "elements": [
+        "form"
+      ],
+      "conditions": {},
+      "description": "Default setting for autofill feature for controls in the form",
+      "value": "\"on\"; \"off\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "autocomplete",
+      "elements": [
+        "input",
+        "select",
+        "textarea"
+      ],
+      "conditions": {},
+      "description": "Hint for form autofill feature",
+      "value": "Autofill field name and related tokens",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "autocorrect",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Recommended autocorrection behavior (for supported input methods)",
+      "value": "\"on\"; \"off\"; the empty string",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "autofocus",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Automatically focus the element when the page is loaded",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "autoplay",
+      "elements": [
+        "audio",
+        "video"
+      ],
+      "conditions": {},
+      "description": "Hint that the media resource can be started automatically when the page is loaded",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "blocking",
+      "elements": [
+        "link",
+        "script",
+        "style"
+      ],
+      "conditions": {},
+      "description": "Whether the element is potentially render-blocking",
+      "value": "Unordered set of unique space-separated tokens",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "charset",
+      "elements": [
+        "meta"
+      ],
+      "conditions": {},
+      "description": "Character encoding declaration",
+      "value": "\"utf-8\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "checked",
+      "elements": [
+        "input"
+      ],
+      "conditions": {},
+      "description": "Whether the control is checked",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "cite",
+      "elements": [
+        "blockquote",
+        "del",
+        "ins",
+        "q"
+      ],
+      "conditions": {},
+      "description": "Link to the source of the quotation or more information about the edit",
+      "value": "Valid URL potentially surrounded by spaces",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "class",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Classes to which the element belongs",
+      "value": "Set of space-separated tokens",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "closedby",
+      "elements": [
+        "dialog"
+      ],
+      "conditions": {},
+      "description": "Which user actions will close the dialog",
+      "value": "\"any\"; \"closerequest\"; \"none\";",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "color",
+      "elements": [
+        "link"
+      ],
+      "conditions": {},
+      "description": "Color to use when customizing a site's icon (for rel=\"mask-icon\")",
+      "value": "CSS <color>",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "colorspace",
+      "elements": [
+        "input"
+      ],
+      "conditions": {},
+      "description": "The color space of the serialized color",
+      "value": "\"limited-srgb\"; \"display-p3\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "cols",
+      "elements": [
+        "textarea"
+      ],
+      "conditions": {},
+      "description": "Maximum number of characters per line",
+      "value": "Valid non-negative integer greater than zero",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "colspan",
+      "elements": [
+        "td",
+        "th"
+      ],
+      "conditions": {},
+      "description": "Number of columns that the cell is to span",
+      "value": "Valid non-negative integer greater than zero",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "command",
+      "elements": [
+        "button"
+      ],
+      "conditions": {},
+      "description": "Indicates to the targeted element which action to take.",
+      "value": "\"toggle-popover\"; \"show-popover\"; \"hide-popover\"; \"close\"; \"request-close\"; \"show-modal\"; a custom command keyword",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "commandfor",
+      "elements": [
+        "button"
+      ],
+      "conditions": {},
+      "description": "Targets another element to be invoked.",
+      "value": "ID",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "content",
+      "elements": [
+        "meta"
+      ],
+      "conditions": {},
+      "description": "Value of the element",
+      "value": "Text",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "contenteditable",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Whether the element is editable",
+      "value": "\"true\"; \"false\"; \"plaintext-only\"; the empty string",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "controls",
+      "elements": [
+        "audio",
+        "video",
+        "img"
+      ],
+      "conditions": {},
+      "description": "Show user agent controls",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "coords",
+      "elements": [
+        "area"
+      ],
+      "conditions": {},
+      "description": "Coordinates for the shape to be created in an image map",
+      "value": "Valid list of floating-point numbers",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "crossorigin",
+      "elements": [
+        "audio",
+        "img",
+        "link",
+        "script",
+        "video"
+      ],
+      "conditions": {},
+      "description": "How the element handles crossorigin requests",
+      "value": "\"anonymous\"; \"use-credentials\"; the empty string",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "data",
+      "elements": [
+        "object"
+      ],
+      "conditions": {},
+      "description": "Address of the resource",
+      "value": "Valid non-empty URL potentially surrounded by spaces",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "datetime",
+      "elements": [
+        "del",
+        "ins"
+      ],
+      "conditions": {},
+      "description": "Date and (optionally) time of the change",
+      "value": "Valid date string with optional time",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "datetime",
+      "elements": [
+        "time"
+      ],
+      "conditions": {},
+      "description": "Machine-readable value",
+      "value": "Valid month string, valid date string, valid yearless date string, valid time string, valid local date and time string, valid time-zone offset string, valid global date and time string, valid week string, valid non-negative integer, or valid duration string",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "decoding",
+      "elements": [
+        "img"
+      ],
+      "conditions": {},
+      "description": "Decoding hint to use when processing this image for presentation",
+      "value": "\"sync\"; \"async\"; \"auto\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "default",
+      "elements": [
+        "track"
+      ],
+      "conditions": {},
+      "description": "Enable the track if no other text track is more suitable",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "defer",
+      "elements": [
+        "script"
+      ],
+      "conditions": {},
+      "description": "Defer script execution",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "dir",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "The text directionality of the element",
+      "value": "\"ltr\"; \"rtl\"; \"auto\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "dir",
+      "elements": [
+        "bdo"
+      ],
+      "conditions": {},
+      "description": "The text directionality of the element",
+      "value": "\"ltr\"; \"rtl\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "dirname",
+      "elements": [
+        "input",
+        "textarea"
+      ],
+      "conditions": {},
+      "description": "Name of form control to use for sending the element's directionality in form submission",
+      "value": "Text",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "disabled",
+      "elements": [
+        "button",
+        "input",
+        "optgroup",
+        "option",
+        "select",
+        "textarea",
+        "form-associated custom elements"
+      ],
+      "conditions": {},
+      "description": "Whether the form control is disabled",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "disabled",
+      "elements": [
+        "fieldset"
+      ],
+      "conditions": {},
+      "description": "Whether the descendant form controls, except any inside legend, are disabled",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "disabled",
+      "elements": [
+        "link"
+      ],
+      "conditions": {},
+      "description": "Whether the link is disabled",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "download",
+      "elements": [
+        "a",
+        "area"
+      ],
+      "conditions": {},
+      "description": "Whether to download the resource instead of navigating to it, and its filename if so",
+      "value": "Text",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "draggable",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Whether the element is draggable",
+      "value": "\"true\"; \"false\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "enctype",
+      "elements": [
+        "form"
+      ],
+      "conditions": {},
+      "description": "Entry list encoding type to use for form submission",
+      "value": "\"application/x-www-form-urlencoded\"; \"multipart/form-data\"; \"text/plain\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "enterkeyhint",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Hint for selecting an enter key action",
+      "value": "\"enter\"; \"done\"; \"go\"; \"next\"; \"previous\"; \"search\"; \"send\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "fetchpriority",
+      "elements": [
+        "img",
+        "link",
+        "script"
+      ],
+      "conditions": {},
+      "description": "Sets the priority for fetches initiated by the element",
+      "value": "\"auto\"; \"high\"; \"low\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "for",
+      "elements": [
+        "label"
+      ],
+      "conditions": {},
+      "description": "Associate the label with form control",
+      "value": "ID",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "for",
+      "elements": [
+        "output"
+      ],
+      "conditions": {},
+      "description": "Specifies controls from which the output was calculated",
+      "value": "Unordered set of unique space-separated tokens consisting of IDs",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "for",
+      "elements": [
+        "template"
+      ],
+      "conditions": {},
+      "description": "Updates existing content",
+      "value": "Text",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "form",
+      "elements": [
+        "button",
+        "fieldset",
+        "input",
+        "object",
+        "output",
+        "select",
+        "textarea",
+        "form-associated custom elements"
+      ],
+      "conditions": {},
+      "description": "Associates the element with a form element",
+      "value": "ID",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "formaction",
+      "elements": [
+        "button",
+        "input"
+      ],
+      "conditions": {},
+      "description": "URL to use for form submission",
+      "value": "Valid non-empty URL potentially surrounded by spaces",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "formenctype",
+      "elements": [
+        "button",
+        "input"
+      ],
+      "conditions": {},
+      "description": "Entry list encoding type to use for form submission",
+      "value": "\"application/x-www-form-urlencoded\"; \"multipart/form-data\"; \"text/plain\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "formmethod",
+      "elements": [
+        "button",
+        "input"
+      ],
+      "conditions": {},
+      "description": "Variant to use for form submission",
+      "value": "\"get\"; \"post\"; \"dialog\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "formnovalidate",
+      "elements": [
+        "button",
+        "input"
+      ],
+      "conditions": {},
+      "description": "Bypass form control validation for form submission",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "formtarget",
+      "elements": [
+        "button",
+        "input"
+      ],
+      "conditions": {},
+      "description": "Navigable for form submission",
+      "value": "Valid navigable target name or keyword",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "headers",
+      "elements": [
+        "td",
+        "th"
+      ],
+      "conditions": {},
+      "description": "The header cells for this cell",
+      "value": "Unordered set of unique space-separated tokens consisting of IDs",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "headingoffset",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Offsets heading levels for descendants",
+      "value": "Valid non-negative integer between 0 and 8",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "headingreset",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Prevents a heading offset computation from traversing beyond the element with the attribute",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "height",
+      "elements": [
+        "canvas",
+        "embed",
+        "iframe",
+        "img",
+        "input",
+        "object",
+        "source",
+        "video"
+      ],
+      "conditions": {
+        "source": "in picture"
+      },
+      "description": "Vertical dimension",
+      "value": "Valid non-negative integer",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "hidden",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Whether the element is relevant",
+      "value": "\"until-found\"; \"hidden\"; the empty string",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "high",
+      "elements": [
+        "meter"
+      ],
+      "conditions": {},
+      "description": "Low limit of high range",
+      "value": "Valid floating-point number",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "href",
+      "elements": [
+        "a",
+        "area"
+      ],
+      "conditions": {},
+      "description": "Address of the hyperlink",
+      "value": "Valid URL potentially surrounded by spaces",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "href",
+      "elements": [
+        "link"
+      ],
+      "conditions": {},
+      "description": "Address of the hyperlink",
+      "value": "Valid non-empty URL potentially surrounded by spaces",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "href",
+      "elements": [
+        "base"
+      ],
+      "conditions": {},
+      "description": "Document base URL",
+      "value": "Valid URL potentially surrounded by spaces",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "hreflang",
+      "elements": [
+        "a",
+        "link"
+      ],
+      "conditions": {},
+      "description": "Language of the linked resource",
+      "value": "Valid BCP 47 language tag",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "http-equiv",
+      "elements": [
+        "meta"
+      ],
+      "conditions": {},
+      "description": "Pragma directive",
+      "value": "\"content-type\"; \"default-style\"; \"refresh\"; \"x-ua-compatible\"; \"content-security-policy\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "id",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "The element's ID",
+      "value": "Text",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "imagesizes",
+      "elements": [
+        "link"
+      ],
+      "conditions": {},
+      "description": "Image sizes for different page layouts (for rel=\"preload\")",
+      "value": "Valid source size list",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "imagesrcset",
+      "elements": [
+        "link"
+      ],
+      "conditions": {},
+      "description": "Images to use in different situations, e.g., high-resolution displays, small monitors, etc. (for rel=\"preload\")",
+      "value": "Comma-separated list of image candidate strings",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "inert",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Whether the element is inert.",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "inputmode",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Hint for selecting an input modality",
+      "value": "\"none\"; \"text\"; \"tel\"; \"email\"; \"url\"; \"numeric\"; \"decimal\"; \"search\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "integrity",
+      "elements": [
+        "link",
+        "script"
+      ],
+      "conditions": {},
+      "description": "Integrity metadata used in Subresource Integrity checks [SRI]",
+      "value": "Text",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "is",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Creates a customized built-in element",
+      "value": "Valid custom element name of a defined customized built-in element",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "ismap",
+      "elements": [
+        "img"
+      ],
+      "conditions": {},
+      "description": "Whether the image is a server-side image map",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "itemid",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Global identifier for a microdata item",
+      "value": "Valid URL potentially surrounded by spaces",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "itemprop",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Property names of a microdata item",
+      "value": "Unordered set of unique space-separated tokens consisting of valid absolute URLs, defined property names, or text",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "itemref",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Referenced elements",
+      "value": "Unordered set of unique space-separated tokens consisting of IDs",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "itemscope",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Introduces a microdata item",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "itemtype",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Item types of a microdata item",
+      "value": "Unordered set of unique space-separated tokens consisting of valid absolute URLs",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "kind",
+      "elements": [
+        "track"
+      ],
+      "conditions": {},
+      "description": "The type of text track",
+      "value": "\"subtitles\"; \"captions\"; \"descriptions\"; \"chapters\"; \"metadata\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "label",
+      "elements": [
+        "optgroup",
+        "option",
+        "track"
+      ],
+      "conditions": {},
+      "description": "User-visible label",
+      "value": "Text",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "lang",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Language of the element",
+      "value": "Valid BCP 47 language tag or the empty string",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "list",
+      "elements": [
+        "input"
+      ],
+      "conditions": {},
+      "description": "List of autocomplete options",
+      "value": "ID",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "loading",
+      "elements": [
+        "iframe",
+        "img",
+        "audio",
+        "video"
+      ],
+      "conditions": {},
+      "description": "Used when determining loading deferral",
+      "value": "\"lazy\"; \"eager\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "loop",
+      "elements": [
+        "audio",
+        "video"
+      ],
+      "conditions": {},
+      "description": "Whether to loop the media resource",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "low",
+      "elements": [
+        "meter"
+      ],
+      "conditions": {},
+      "description": "High limit of low range",
+      "value": "Valid floating-point number",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "max",
+      "elements": [
+        "input"
+      ],
+      "conditions": {},
+      "description": "Maximum value",
+      "value": "Varies",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "max",
+      "elements": [
+        "meter",
+        "progress"
+      ],
+      "conditions": {},
+      "description": "Upper bound of range",
+      "value": "Valid floating-point number",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "maxlength",
+      "elements": [
+        "input",
+        "textarea"
+      ],
+      "conditions": {},
+      "description": "Maximum length of value",
+      "value": "Valid non-negative integer",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "media",
+      "elements": [
+        "link",
+        "meta",
+        "source",
+        "style"
+      ],
+      "conditions": {},
+      "description": "Applicable media",
+      "value": "Valid media query list",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "method",
+      "elements": [
+        "form"
+      ],
+      "conditions": {},
+      "description": "Variant to use for form submission",
+      "value": "\"get\"; \"post\"; \"dialog\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "min",
+      "elements": [
+        "input"
+      ],
+      "conditions": {},
+      "description": "Minimum value",
+      "value": "Varies",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "min",
+      "elements": [
+        "meter"
+      ],
+      "conditions": {},
+      "description": "Lower bound of range",
+      "value": "Valid floating-point number",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "minlength",
+      "elements": [
+        "input",
+        "textarea"
+      ],
+      "conditions": {},
+      "description": "Minimum length of value",
+      "value": "Valid non-negative integer",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "multiple",
+      "elements": [
+        "input",
+        "select"
+      ],
+      "conditions": {},
+      "description": "Whether to allow multiple values",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "muted",
+      "elements": [
+        "audio",
+        "video"
+      ],
+      "conditions": {},
+      "description": "Whether to mute the media resource by default",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "name",
+      "elements": [
+        "button",
+        "fieldset",
+        "input",
+        "output",
+        "select",
+        "textarea",
+        "form-associated custom elements"
+      ],
+      "conditions": {},
+      "description": "Name of the element to use for form submission and in the form.elements API",
+      "value": "Text",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "name",
+      "elements": [
+        "details"
+      ],
+      "conditions": {},
+      "description": "Name of group of mutually-exclusive details elements",
+      "value": "Text",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "name",
+      "elements": [
+        "form"
+      ],
+      "conditions": {},
+      "description": "Name of form to use in the document.forms API",
+      "value": "Text",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "name",
+      "elements": [
+        "iframe",
+        "object"
+      ],
+      "conditions": {},
+      "description": "Name of content navigable",
+      "value": "Valid navigable target name or keyword",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "name",
+      "elements": [
+        "map"
+      ],
+      "conditions": {},
+      "description": "Name of image map to reference from the usemap attribute",
+      "value": "Text",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "name",
+      "elements": [
+        "meta"
+      ],
+      "conditions": {},
+      "description": "Metadata name",
+      "value": "Text",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "name",
+      "elements": [
+        "slot"
+      ],
+      "conditions": {},
+      "description": "Name of shadow tree slot",
+      "value": "Text",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "nomodule",
+      "elements": [
+        "script"
+      ],
+      "conditions": {},
+      "description": "Prevents execution in user agents that support module scripts",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "nonce",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Cryptographic nonce used in Content Security Policy checks [CSP]",
+      "value": "Text",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "novalidate",
+      "elements": [
+        "form"
+      ],
+      "conditions": {},
+      "description": "Bypass form control validation for form submission",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "open",
+      "elements": [
+        "details"
+      ],
+      "conditions": {},
+      "description": "Whether the details are visible",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "open",
+      "elements": [
+        "dialog"
+      ],
+      "conditions": {},
+      "description": "Whether the dialog box is showing",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "optimum",
+      "elements": [
+        "meter"
+      ],
+      "conditions": {},
+      "description": "Optimum value in gauge",
+      "value": "Valid floating-point number",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "pattern",
+      "elements": [
+        "input"
+      ],
+      "conditions": {},
+      "description": "Pattern to be matched by the form control's value",
+      "value": "Regular expression matching the JavaScript Pattern production",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "ping",
+      "elements": [
+        "a",
+        "area"
+      ],
+      "conditions": {},
+      "description": "URLs to ping",
+      "value": "Set of space-separated tokens consisting of valid non-empty URLs",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "placeholder",
+      "elements": [
+        "input",
+        "textarea"
+      ],
+      "conditions": {},
+      "description": "User-visible label to be placed within the form control",
+      "value": "Text",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "playsinline",
+      "elements": [
+        "video"
+      ],
+      "conditions": {},
+      "description": "Encourage the user agent to display video content within the element's playback area",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "popover",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Makes the element a popover element",
+      "value": "\"auto\"; \"manual\"; \"hint\"; the empty string",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "popovertarget",
+      "elements": [
+        "button",
+        "input"
+      ],
+      "conditions": {},
+      "description": "Targets a popover element to toggle, show, or hide",
+      "value": "ID",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "popovertargetaction",
+      "elements": [
+        "button",
+        "input"
+      ],
+      "conditions": {},
+      "description": "Indicates whether a targeted popover element is to be toggled, shown, or hidden",
+      "value": "\"toggle\"; \"show\"; \"hide\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "poster",
+      "elements": [
+        "video"
+      ],
+      "conditions": {},
+      "description": "Poster frame to show prior to video playback",
+      "value": "Valid non-empty URL potentially surrounded by spaces",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "preload",
+      "elements": [
+        "audio",
+        "video"
+      ],
+      "conditions": {},
+      "description": "Hints how much buffering the media resource will likely need",
+      "value": "\"none\"; \"metadata\"; \"auto\"; the empty string",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "readonly",
+      "elements": [
+        "input",
+        "textarea"
+      ],
+      "conditions": {},
+      "description": "Whether to allow the value to be edited by the user",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "readonly",
+      "elements": [
+        "form-associated custom elements"
+      ],
+      "conditions": {},
+      "description": "Affects willValidate, plus any behavior added by the custom element author",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "referrerpolicy",
+      "elements": [
+        "a",
+        "area",
+        "iframe",
+        "img",
+        "link",
+        "script"
+      ],
+      "conditions": {},
+      "description": "Referrer policy for fetches initiated by the element",
+      "value": "Referrer policy",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "rel",
+      "elements": [
+        "a",
+        "area"
+      ],
+      "conditions": {},
+      "description": "Relationship between the location in the document containing the hyperlink and the destination resource",
+      "value": "Unordered set of unique space-separated tokens",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "rel",
+      "elements": [
+        "link"
+      ],
+      "conditions": {},
+      "description": "Relationship between the document containing the hyperlink and the destination resource",
+      "value": "Unordered set of unique space-separated tokens",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "required",
+      "elements": [
+        "input",
+        "select",
+        "textarea"
+      ],
+      "conditions": {},
+      "description": "Whether the control is required for form submission",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "reversed",
+      "elements": [
+        "ol"
+      ],
+      "conditions": {},
+      "description": "Number the list backwards",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "rows",
+      "elements": [
+        "textarea"
+      ],
+      "conditions": {},
+      "description": "Number of lines to show",
+      "value": "Valid non-negative integer greater than zero",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "rowspan",
+      "elements": [
+        "td",
+        "th"
+      ],
+      "conditions": {},
+      "description": "Number of rows that the cell is to span",
+      "value": "Valid non-negative integer",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "sandbox",
+      "elements": [
+        "iframe"
+      ],
+      "conditions": {},
+      "description": "Security rules for nested content",
+      "value": "Unordered set of unique space-separated tokens, ASCII case-insensitive, consisting of \"allow-downloads\"\"allow-forms\"\"allow-modals\"\"allow-orientation-lock\"\"allow-pointer-lock\"\"allow-popups\"\"allow-popups-to-escape-sandbox\"\"allow-presentation\"\"allow-same-origin\"\"allow-scripts\"\"allow-top-navigation\"\"allow-top-navigation-by-user-activation\"\"allow-top-navigation-to-custom-protocols\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "scope",
+      "elements": [
+        "th"
+      ],
+      "conditions": {},
+      "description": "Specifies which cells the header cell applies to",
+      "value": "\"row\"; \"col\"; \"rowgroup\"; \"colgroup\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "selected",
+      "elements": [
+        "option"
+      ],
+      "conditions": {},
+      "description": "Whether the option is selected by default",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "shadowrootclonable",
+      "elements": [
+        "template"
+      ],
+      "conditions": {},
+      "description": "Sets clonable on a declarative shadow root",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "shadowrootcustomelementregistry",
+      "elements": [
+        "template"
+      ],
+      "conditions": {},
+      "description": "Enables declarative shadow roots to indicate they will use a custom element registry",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "shadowrootdelegatesfocus",
+      "elements": [
+        "template"
+      ],
+      "conditions": {},
+      "description": "Sets delegates focus on a declarative shadow root",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "shadowrootmode",
+      "elements": [
+        "template"
+      ],
+      "conditions": {},
+      "description": "Enables streaming declarative shadow roots",
+      "value": "\"open\"; \"closed\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "shadowrootserializable",
+      "elements": [
+        "template"
+      ],
+      "conditions": {},
+      "description": "Sets serializable on a declarative shadow root",
+      "value": "Boolean attribute",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "shadowrootslotassignment",
+      "elements": [
+        "template"
+      ],
+      "conditions": {},
+      "description": "Sets slot assignment on a declarative shadow root",
+      "value": "\"named\"; \"manual\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "shape",
+      "elements": [
+        "area"
+      ],
+      "conditions": {},
+      "description": "The kind of shape to be created in an image map",
+      "value": "\"circle\"; \"default\"; \"poly\"; \"rect\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "size",
+      "elements": [
+        "input",
+        "select"
+      ],
+      "conditions": {},
+      "description": "Size of the control",
+      "value": "Valid non-negative integer greater than zero",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "sizes",
+      "elements": [
+        "link"
+      ],
+      "conditions": {},
+      "description": "Sizes of the icons (for rel=\"icon\")",
+      "value": "Unordered set of unique space-separated tokens, ASCII case-insensitive, consisting of sizes",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "sizes",
+      "elements": [
+        "img",
+        "source"
+      ],
+      "conditions": {},
+      "description": "Image sizes for different page layouts",
+      "value": "Valid source size list",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "slot",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "The element's desired slot",
+      "value": "Text",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "span",
+      "elements": [
+        "col",
+        "colgroup"
+      ],
+      "conditions": {},
+      "description": "Number of columns spanned by the element",
+      "value": "Valid non-negative integer greater than zero",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "spellcheck",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Whether the element is to have its spelling and grammar checked",
+      "value": "\"true\"; \"false\"; the empty string",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "src",
+      "elements": [
+        "audio",
+        "embed",
+        "iframe",
+        "img",
+        "input",
+        "script",
+        "source",
+        "track",
+        "video"
+      ],
+      "conditions": {
+        "source": "in video or audio"
+      },
+      "description": "Address of the resource",
+      "value": "Valid non-empty URL potentially surrounded by spaces",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "srcdoc",
+      "elements": [
+        "iframe"
+      ],
+      "conditions": {},
+      "description": "A document to render in the iframe",
+      "value": "The source of an iframe srcdoc document",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "srclang",
+      "elements": [
+        "track"
+      ],
+      "conditions": {},
+      "description": "Language of the text track",
+      "value": "Valid BCP 47 language tag",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "srcset",
+      "elements": [
+        "img",
+        "source"
+      ],
+      "conditions": {},
+      "description": "Images to use in different situations, e.g., high-resolution displays, small monitors, etc.",
+      "value": "Comma-separated list of image candidate strings",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "start",
+      "elements": [
+        "ol"
+      ],
+      "conditions": {},
+      "description": "Starting value of the list",
+      "value": "Valid integer",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "step",
+      "elements": [
+        "input"
+      ],
+      "conditions": {},
+      "description": "Granularity to be matched by the form control's value",
+      "value": "Valid floating-point number greater than zero, or \"any\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "style",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Presentational and formatting instructions",
+      "value": "CSS declarations",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "tabindex",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Whether the element is focusable and sequentially focusable, and the relative order of the element for the purposes of sequential focus navigation",
+      "value": "Valid integer",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "target",
+      "elements": [
+        "a",
+        "area"
+      ],
+      "conditions": {},
+      "description": "Navigable for hyperlink navigation",
+      "value": "Valid navigable target name or keyword",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "target",
+      "elements": [
+        "base"
+      ],
+      "conditions": {},
+      "description": "Default navigable for hyperlink navigation and form submission",
+      "value": "Valid navigable target name or keyword",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "target",
+      "elements": [
+        "form"
+      ],
+      "conditions": {},
+      "description": "Navigable for form submission",
+      "value": "Valid navigable target name or keyword",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "title",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Advisory information for the element",
+      "value": "Text",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "title",
+      "elements": [
+        "abbr",
+        "dfn"
+      ],
+      "conditions": {},
+      "description": "Full term or expansion of abbreviation",
+      "value": "Text",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "title",
+      "elements": [
+        "input"
+      ],
+      "conditions": {},
+      "description": "Description of pattern (when used with pattern attribute)",
+      "value": "Text",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "title",
+      "elements": [
+        "link"
+      ],
+      "conditions": {},
+      "description": "Title of the link",
+      "value": "Text",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "title",
+      "elements": [
+        "link",
+        "style"
+      ],
+      "conditions": {},
+      "description": "CSS style sheet set name",
+      "value": "Text",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "translate",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Whether the element is to be translated when the page is localized",
+      "value": "\"yes\"; \"no\"; the empty string",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "type",
+      "elements": [
+        "a",
+        "link"
+      ],
+      "conditions": {},
+      "description": "Hint for the type of the referenced resource",
+      "value": "Valid MIME type string",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "type",
+      "elements": [
+        "button"
+      ],
+      "conditions": {},
+      "description": "Type of button",
+      "value": "\"submit\"; \"reset\"; \"button\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "type",
+      "elements": [
+        "embed",
+        "object",
+        "source"
+      ],
+      "conditions": {},
+      "description": "Type of embedded resource",
+      "value": "Valid MIME type string",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "type",
+      "elements": [
+        "input"
+      ],
+      "conditions": {},
+      "description": "Type of form control",
+      "value": "input type keyword",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "type",
+      "elements": [
+        "ol"
+      ],
+      "conditions": {},
+      "description": "Kind of list marker",
+      "value": "\"1\"; \"a\"; \"A\"; \"i\"; \"I\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "type",
+      "elements": [
+        "script"
+      ],
+      "conditions": {},
+      "description": "Type of script",
+      "value": "\"module\"; \"importmap\"; \"speculationrules\"; a valid MIME type string that is not a JavaScript MIME type essence match",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "usemap",
+      "elements": [
+        "img"
+      ],
+      "conditions": {},
+      "description": "Name of image map to use",
+      "value": "Valid hash-name reference",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "value",
+      "elements": [
+        "button",
+        "option"
+      ],
+      "conditions": {},
+      "description": "Value to be used for form submission",
+      "value": "Text",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "value",
+      "elements": [
+        "data"
+      ],
+      "conditions": {},
+      "description": "Machine-readable value",
+      "value": "Text",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "value",
+      "elements": [
+        "input"
+      ],
+      "conditions": {},
+      "description": "Value of the form control",
+      "value": "Varies",
+      "value_footnote": true,
+      "kind": "content"
+    },
+    {
+      "name": "value",
+      "elements": [
+        "li"
+      ],
+      "conditions": {},
+      "description": "Ordinal value of the list item",
+      "value": "Valid integer",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "value",
+      "elements": [
+        "meter",
+        "progress"
+      ],
+      "conditions": {},
+      "description": "Current value of the element",
+      "value": "Valid floating-point number",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "width",
+      "elements": [
+        "canvas",
+        "embed",
+        "iframe",
+        "img",
+        "input",
+        "object",
+        "source",
+        "video"
+      ],
+      "conditions": {
+        "source": "in picture"
+      },
+      "description": "Horizontal dimension",
+      "value": "Valid non-negative integer",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "wrap",
+      "elements": [
+        "textarea"
+      ],
+      "conditions": {},
+      "description": "How the value of the form control is to be wrapped for form submission",
+      "value": "\"soft\"; \"hard\"",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "writingsuggestions",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "Whether the element can offer writing suggestions or not.",
+      "value": "\"true\"; \"false\"; the empty string",
+      "value_footnote": false,
+      "kind": "content"
+    },
+    {
+      "name": "onafterprint",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "afterprint event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onauxclick",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "auxclick event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onbeforeinput",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "beforeinput event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onbeforematch",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "beforematch event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onbeforeprint",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "beforeprint event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onbeforeunload",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "beforeunload event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onbeforetoggle",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "beforetoggle event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onblur",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "blur event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "oncancel",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "cancel event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "oncanplay",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "canplay event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "oncanplaythrough",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "canplaythrough event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onchange",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "change event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onclick",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "click event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onclose",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "close event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "oncommand",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "command event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "oncontextlost",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "contextlost event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "oncontextmenu",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "contextmenu event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "oncontextrestored",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "contextrestored event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "oncopy",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "copy event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "oncuechange",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "cuechange event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "oncut",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "cut event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "ondblclick",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "dblclick event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "ondrag",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "drag event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "ondragend",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "dragend event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "ondragenter",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "dragenter event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "ondragleave",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "dragleave event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "ondragover",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "dragover event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "ondragstart",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "dragstart event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "ondrop",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "drop event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "ondurationchange",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "durationchange event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onemptied",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "emptied event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onended",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "ended event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onerror",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "error event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onfocus",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "focus event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onformdata",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "formdata event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onhashchange",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "hashchange event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "oninput",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "input event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "oninvalid",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "invalid event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onkeydown",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "keydown event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onkeypress",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "keypress event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onkeyup",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "keyup event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onlanguagechange",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "languagechange event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onload",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "load event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onloadeddata",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "loadeddata event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onloadedmetadata",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "loadedmetadata event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onloadstart",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "loadstart event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onmessage",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "message event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onmessageerror",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "messageerror event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onmousedown",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "mousedown event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onmouseenter",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "mouseenter event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onmouseleave",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "mouseleave event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onmousemove",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "mousemove event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onmouseout",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "mouseout event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onmouseover",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "mouseover event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onmouseup",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "mouseup event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onoffline",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "offline event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "ononline",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "online event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onpagehide",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "pagehide event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onpagereveal",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "pagereveal event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onpageshow",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "pageshow event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onpageswap",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "pageswap event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onpaste",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "paste event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onpause",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "pause event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onplay",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "play event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onplaying",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "playing event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onpopstate",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "popstate event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onprogress",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "progress event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onratechange",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "ratechange event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onreset",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "reset event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onresize",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "resize event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onrejectionhandled",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "rejectionhandled event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onscroll",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "scroll event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onscrollend",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "scrollend event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onsecuritypolicyviolation",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "securitypolicyviolation event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onseeked",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "seeked event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onseeking",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "seeking event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onselect",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "select event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onslotchange",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "slotchange event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onstalled",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "stalled event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onstorage",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "storage event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onsubmit",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "submit event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onsuspend",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "suspend event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "ontimeupdate",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "timeupdate event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "ontoggle",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "toggle event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onunhandledrejection",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "unhandledrejection event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onunload",
+      "elements": [
+        "body"
+      ],
+      "conditions": {},
+      "description": "unload event handler for Window object",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onvolumechange",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "volumechange event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onwaiting",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "waiting event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    },
+    {
+      "name": "onwheel",
+      "elements": [
+        "HTML elements"
+      ],
+      "conditions": {},
+      "description": "wheel event handler",
+      "value": "Event handler content attribute",
+      "value_footnote": false,
+      "kind": "event-handler"
+    }
+  ],
+  "extraction_warnings": [
+    "attribute index: controls: missing ';' between ['video', 'img']"
+  ]
+}
