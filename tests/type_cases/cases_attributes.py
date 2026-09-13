@@ -61,3 +61,4 @@ div(tabindex=True)  # bool is an int, and renders a bare tabindex
 a(href="http://[bad")  # URL syntax is not checked
 a(href="/x", target="_top-frame")  # names starting with "_" must be one of the keywords
 a(download="x")  # download, target, rel, ... must be omitted when href is absent
+_: object = div[b"x"]  # bytes is an Iterable[int]; rejected when the element is built
