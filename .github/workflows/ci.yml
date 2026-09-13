@@ -1,0 +1,66 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  check:
+    name: Tests and type checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      # python-version is left unset so uv picks it up from .python-version.
+      - uses: astral-sh/setup-uv@v10
+        with:
+          enable-cache: true
+          cache-python: true
+
+      - name: Install dependencies
+        id: sync
+        run: uv sync --locked
+
+      # Each check runs even if an earlier one fails, so one run reports all failures.
+      - name: pytest
+        if: ${{ !cancelled() && steps.sync.outcome == 'success' }}
+        run: uv run --locked pytest
+
+      - name: ty
+        if: ${{ !cancelled() && steps.sync.outcome == 'success' }}
+        run: uv run --locked ty check
+
+      # pyright's Python wrapper uses the runner's preinstalled Node.js from PATH.
+      - name: Node.js for pyright
+        if: ${{ !cancelled() && steps.sync.outcome == 'success' }}
+        run: node --version
+
+      - name: pyright
+        if: ${{ !cancelled() && steps.sync.outcome == 'success' }}
+        run: uv run --locked pyright
+
+      - name: ruff check
+        if: ${{ !cancelled() && steps.sync.outcome == 'success' }}
+        run: uv run --locked ruff check .
+
+  prek:
+    name: prek hooks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      # Runs `prek run --show-diff-on-failure --all-files`.
+      - uses: j178/prek-action@v3
