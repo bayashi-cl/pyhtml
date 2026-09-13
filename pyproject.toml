@@ -10,6 +10,7 @@ dependencies = []
 [dependency-groups]
 dev = [
   "beautifulsoup4>=4.15.0",
+  "hypothesis>=6.168.0",
   "lxml>=6.1.3",
   "pyright>=1.1.414",
   "pytest>=9.1.1",

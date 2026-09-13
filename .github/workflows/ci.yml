@@ -17,6 +17,14 @@ jobs:
   check:
     name: Tests and type checks
     runs-on: ubuntu-latest
+    env:
+      VNU_URL: http://127.0.0.1:8888/
+    services:
+      # Nu Html Checker for tests/test_vnu.py, pinned by digest (version 26.9.7).
+      vnu:
+        image: ghcr.io/validator/validator@sha256:8d1a69110a40900c31fb37426dfac2f20d8d26d12431255e1c38cfcefae08cbd
+        ports:
+          - 8888:8888
     steps:
       - uses: actions/checkout@v7
         with:
@@ -32,6 +40,17 @@ jobs:
       - name: Install dependencies
         id: sync
         run: uv sync --locked
+
+      # The service container is started before the steps, but the checker needs a
+      # few seconds before it accepts requests.
+      - name: Wait for the Nu Html Checker
+        run: |
+          for _ in $(seq 60); do
+            curl -sf -o /dev/null "$VNU_URL" && exit 0
+            sleep 1
+          done
+          echo "vnu did not start" >&2
+          exit 1
 
       # Each check runs even if an earlier one fails, so one run reports all failures.
       - name: pytest
